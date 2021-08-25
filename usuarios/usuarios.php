@@ -28,10 +28,12 @@ function ver_usuarios(){
     $ver_usuarios = " SELECT * FROM usuarios";
     return mysqli_query($this->conn, $ver_usuarios);
 }
-function eliminar_usuario(){
-    $eliminar_usuario = " DELETE FROM usuarios WHERE id = $id ";
+function eliminar_usuario($id){
+    $eliminar_usuario = " DELETE FROM usuarios WHERE id = $id  ";
     return mysqli_query($this->conn, $eliminar_usuario);
 }
 
 }
+
+
 ?>

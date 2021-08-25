@@ -3,11 +3,10 @@
 include_once('../config/config.php');
 include_once('salones.php'); //llamamos al archivo
 
-  $Salones = new salones();
-  $todos_los_salones = $Salones->ver_Salones()
+  $salones = new salones();
+  $todos_los_salones = $salones->ver_salones();
+?>
 
-
-?> 
 
 <!DOCTYPE html>
 <html lang="es">
@@ -15,7 +14,7 @@ include_once('salones.php'); //llamamos al archivo
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver usuarios</title>
+    <title>ver salones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles.css">
@@ -25,7 +24,9 @@ include_once('salones.php'); //llamamos al archivo
 <?php
 include('../menu.php');
 ?>
-<table>
+<div class= "container"></div>
+<h1>eliminar elemento</h1>
+    <table class="table">
    <thead>
      <tr>
         <th>ID</th>
@@ -56,6 +57,9 @@ include('../menu.php');
             echo "<tr $info_salones->numero_antibactarial </tr>"; 
             echo "<tr $info_salones->numero_toallas </tr>"; 
             echo "<tr $info_salones->numero_balones</tr>"; 
+            echo "<td><a href='".ROOT."/salones/eliminar.php?id=".$info_salones->id."' class=' btn btn-danger' > X </a>    </td>";
+
+                    echo "</tr>";
             
           }
        ?>

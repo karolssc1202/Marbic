@@ -50,7 +50,7 @@ include('../menu.php');
                     echo "<td> $info_usuario->correo_electronico </td>";
                     echo "<td> $info_usuario->celular </td>";
                     echo "<td> $info_usuario->rol </td>";
-                    echo "<td><a href='".ROOT."/Usuarios/eliminar.php' class=' btn btn-danger' > X </a>    </td>";
+                    echo "<td><a href='".ROOT."/Usuarios/eliminar.php?id=".$info_usuario->id."' class=' btn btn-danger' > X </a>    </td>";
 
                     echo "</tr>";
                     

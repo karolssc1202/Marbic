@@ -5,7 +5,7 @@ include_once('salones.php'); //llamamos al archivo
 
 
 if ( isset($_POST) && !empty($_POST) ){
-    $nuevo_elemento = new elemento(); 
+    $nuevo_elemento = new salones (); 
     $nuevo_elemento->crear_elemento($_POST);
 
     if ($nuevo_elemento){
