@@ -2,11 +2,10 @@
 
 /* Para crear una constante debemos utilizar un método de PHP que se llama define*/
 
-$nombre_carpeta = str_replace('C:\\xampp\\htdocs\\', '/',__DIR__);
+$nombre_carpeta = str_replace('C:\\xampp\\bictia\\htdocs\\', '/',__DIR__);
 
 $nombre_carpeta = str_replace('config', '', $nombre_carpeta);
-echo $nombre_carpeta;
-echo __DIR__;
+
 if ( !defined("ROOT") ){
     define("ROOT", "http://".$_SERVER['HTTP_HOST'] . $nombre_carpeta);
 }

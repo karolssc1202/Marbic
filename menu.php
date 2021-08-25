@@ -13,7 +13,16 @@
           <a class="nav-link" href="<?= ROOT ?>/Usuarios/agregar.php">Registro</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?= ROOT ?>/Salones/agregar.php">Salones</a>
+          <a class="nav-link" href="<?= ROOT ?>/Usuarios/ver.php">Ver usuarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= ROOT ?>/salones/agregar.php">salones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?= ROOT ?>/salones/ver.php">salones/cantidad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
     </div>

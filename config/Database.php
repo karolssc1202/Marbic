@@ -4,7 +4,7 @@ class Database
   public $host = 'localhost'; // Servidor
   public $user = 'root'; // Usuario de phpMyadmin
   public $pass = '';  // Contraseña de phpMyadmin
-  public $db = 'Marbic'; // Base de datos.
+  public $db = 'marbic'; // Base de datos.
   private $conn;
 
   /**
